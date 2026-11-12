@@ -1,0 +1,60 @@
+.home-promo {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+    url("https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=1400");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-content {
+  max-width: 600px;
+}
+
+.promo-content span {
+  color: #d4af37;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.promo-content h2 {
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 55px);
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.promo-content p {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.promo-content a {
+  display: inline-block;
+  color: #111111;
+  background: #d4af37;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.promo-content a:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+  .home-promo {
+    min-height: 320px;
+    padding: 45px 5%;
+  }
+}

@@ -1,0 +1,102 @@
+.order-success-page {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+  padding: 45px 20px;
+  background: #080808;
+  color: #fff;
+}
+
+.order-success-card {
+  width: min(100%, 600px);
+  padding: 45px;
+  text-align: center;
+  background: #141414;
+  border: 1px solid #393327;
+}
+
+.order-success-card > svg {
+  color: #c5a15b;
+  margin: 0 auto 20px;
+}
+
+.order-success-card > span {
+  color: #c5a15b;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.order-success-card h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 18px 0 10px;
+}
+
+.order-success-card > p {
+  color: #aaa;
+}
+
+.order-information {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.order-information div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.order-information div:last-child {
+  border: 0;
+}
+
+.order-information span {
+  color: #999;
+}
+
+.order-information strong {
+  text-align: right;
+  color: #c5a15b;
+}
+
+.order-processing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #bbb;
+  margin-bottom: 28px;
+}
+
+.order-processing svg {
+  color: #c5a15b;
+}
+
+.order-success-card > a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #c5a15b;
+  color: #080808;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .order-success-card {
+    padding: 28px 18px;
+  }
+
+  .order-success-card h1 {
+    font-size: 24px;
+  }
+
+  .order-information {
+    padding: 12px;
+    font-size: 12px;
+  }
+}

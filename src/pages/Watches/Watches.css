@@ -1,0 +1,230 @@
+.watches-page {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.watches-hero {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.watches-hero span,
+.watches-subtitle {
+  color: #c9a45c;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.watches-hero h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.watches-hero p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.watches-content {
+  padding: 80px 7%;
+}
+
+.watches-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.watches-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.watches-count {
+  color: #777;
+  font-size: 14px;
+}
+
+.watches-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.watches-search,
+.watches-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  color: #777;
+}
+
+.watches-search {
+  flex: 1;
+}
+
+.watches-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.watches-sort select {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #444;
+  font-size: 14px;
+}
+
+.watches-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 35px;
+}
+
+.watches-filters {
+  border: 1px solid #eee;
+  padding: 25px;
+  height: fit-content;
+}
+
+.watches-filters h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filter-group h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.filter-group button {
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #777;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.filter-group button.active,
+.filter-group button:hover {
+  color: #b28b46;
+}
+
+.filter-group input[type="range"] {
+  width: 100%;
+  accent-color: #b28b46;
+}
+
+.filter-group p {
+  color: #777;
+  font-size: 13px;
+}
+
+.clear-filters {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clear-filters:hover {
+  background: #b28b46;
+}
+
+.watches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.watches-empty {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.watches-empty h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.watches-empty p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.watches-empty button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .watches-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .watches-hero h1 {
+    font-size: 34px;
+  }
+
+  .watches-content {
+    padding: 55px 5%;
+  }
+
+  .watches-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .watches-toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .watches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .watches-heading h2 {
+    font-size: 29px;
+  }
+
+  .watches-hero {
+    padding: 75px 20px;
+  }
+}
